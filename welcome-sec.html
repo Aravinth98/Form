@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email ID</th>
+                    </tr>
+                    <tr>
+                        <td>Ms</td>
+                        <td>Dhoni</td>
+                        <td>example@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Elon</td>
+                        <td>Musk</td>
+                        <td>example@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sundar</td>
+                        <td>Pichai</td>
+                        <td>example@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname">
+                Last Name :<input type="text" name="lname" id="lname">
+                Email ID:<input type="email" name="age" id="age">
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
