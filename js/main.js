@@ -7,7 +7,7 @@ var rIndex,
                 var isEmpty = false,
                     fname = document.getElementById("fname").value,
                     lname = document.getElementById("lname").value,
-                    age = document.getElementById("age").value;
+                    email = document.getElementById("email").value;
             
                 if(fname === ""){
                     alert("First Name Connot Be Empty");
@@ -17,7 +17,7 @@ var rIndex,
                     alert("Last Name Connot Be Empty");
                     isEmpty = true;
                 }
-                else if(age === ""){
+                else if(email === ""){
                     alert("Age Connot Be Empty");
                     isEmpty = true;
                 }
@@ -38,11 +38,11 @@ var rIndex,
                     cell3 = newRow.insertCell(2),
                     fname = document.getElementById("fname").value,
                     lname = document.getElementById("lname").value,
-                    age = document.getElementById("age").value;
+                    age = document.getElementById("email").value;
             
                 cell1.innerHTML = fname;
                 cell2.innerHTML = lname;
-                cell3.innerHTML = age;
+                cell3.innerHTML = email;
                 // call the function to set the event to the new row
                 selectedRowToInput();
             }
@@ -60,7 +60,7 @@ var rIndex,
                       rIndex = this.rowIndex;
                       document.getElementById("fname").value = this.cells[0].innerHTML;
                       document.getElementById("lname").value = this.cells[1].innerHTML;
-                      document.getElementById("age").value = this.cells[2].innerHTML;
+                      document.getElementById("email").value = this.cells[2].innerHTML;
                     };
                 }
             }
@@ -72,5 +72,5 @@ var rIndex,
                 // clear input text
                 document.getElementById("fname").value = "";
                 document.getElementById("lname").value = "";
-                document.getElementById("age").value = "";
+                document.getElementById("email").value = "";
             }
